@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+      <div id="logo">logo</div>
+      <ul class="nav-links">
+        <div class="menu">
+        <li><a href="#">Features</a> </li>
+        <li><a href="#">About Us</a> </li>
+        <li><a href="#">Contact </a> </li>
+    </div>
+    </ul>
+    </nav>
+
+    <div id="sec">
+        <h1>Welcome to Our Modern Website</h1>
+        <p> Discover the latest features and services we offer.</p>
+        <input style="background-color: white; color:dodgerblue; border: white; height: 10%; border-radius: 5px;cursor: pointer;" type="button" value="Expore More">
+    </div>
+
+    <div class="con">
+        <div class="fea">
+            <h1>Feature 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde nemo ut, iure repellendus accusamus a temporibus provident odit saepe?</p>
+        </div>
+
+        <div class="fea">
+            <h1>Feature 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde nemo ut, iure repellendus accusamus a temporibus provident odit saepe?</p>
+        </div>
+
+
+</div>
+<div id="fea3">
+    <h1>Feature 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde nemo ut, iure repellendus accusamus a temporibus provident odit saepe?</p>
+</div>
+
+<div id="aboutus">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi aspernatur nulla ipsa dignissimos recusandae quas voluptatem deserunt sequi illo temporibus, ducimus, facilis similique. At esse hic cupiditate molestiae dolorem.</p>
+</div>
+
+<div id="contact">
+    <h1>Contact Us</h1>
+    <p> Have question or want to get in touch? Send us a message</p>
+
+    <h4>Name:</h4>
+    <input type="text"  placeholder="Your name">
+
+    <h4>Email:</h4>
+    <input type="text" placeholder="Your email">
+
+    <h4>Message</h4>
+    <input id="area" type="text" placeholder="Your message">
+
+
+</div>
+<input id="button" type="button" value="Send Message">
+</body>
+</html>
+ 129 changes: 129 additions & 0 deletions129  
+style.css
+@@ -0,0 +1,129 @@
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+.navbar{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color:black;
+  color: #fff;
+
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+#logo {
+    font-size: 32px;
+  }
+  .menu {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+#sec{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+    background-color: blue;
+    color: white;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.con{
+    display: grid;
+  column-gap: 50px;
+  row-gap:50px;
+  grid-template-columns: auto auto ;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 50px;
+
+}
+.fea {
+    display: grid;
+
+    width: 300px;
+    background-color: rgb(211, 211, 211);;
+    padding: 10px;
+
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+#fea3{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 300px;
+    background-color:lightgrey;
+    color: black;
+    justify-content: center;
+    align-items:center;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    color: black;
+    justify-content: center;
+    align-items:center;
+
+}
+#contact > input{
+    width: 100%;
+    padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+#area{
+    height: 150px;
+  padding: 2px 20px;
+  resize: none;
+}
+
+#button{
+    /* align-content: center; */
+  border:1px solid black;
+  border-radius: 10px;
+  align-items: center;
+  /* justify-content: center; */
+  color:dodgerblue;
+  padding: 16px 32px;
+  cursor: pointer;
+  margin-left: 45%;
+
+
+
+}
